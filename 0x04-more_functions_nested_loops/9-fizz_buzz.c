@@ -37,5 +37,6 @@ int main(void)
 		}
 		putchar(' ');
 	}
+	printf("\n");
 	return (0);
 }
