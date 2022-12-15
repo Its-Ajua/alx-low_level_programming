@@ -22,7 +22,6 @@ void print_diagonal(int n)
 				{
 					if (gap < diagonal)
 						_putchar(' ');
-					
 					else if (diagonal == gap)
 						_putchar('\\');
 				}
