@@ -32,14 +32,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			break;
 		}
 		e = f / 10;
-		r[c] = e % 10 + '0';
+		r[c] = f % 10 + '0';
 	}
 	r[c] = '\0';
 	if (a >= 0 || b >= 0 || e)
 		return (0);
 	for (c -= 1, d = 0; d < c; c--, d++)
 	{
-		f = r[c];
+		e = r[c];
 		r[c] = r[d];
 		r[d] = e;
 	}
