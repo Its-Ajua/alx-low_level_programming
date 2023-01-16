@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_dog - function that prints a struct dog
+ * print_dog - prints a struct dog
  * @d: struct dog to be printed
  *
  */
@@ -15,6 +15,9 @@ void print_dog(struct dog *d)
 
 	if (d->name == NULL)
 		d->name = "(nil)";
+
+	if (d->age < 0)
+		printf("Age: (nil)\n");
 
 	if (d == NULL)
 		return;
