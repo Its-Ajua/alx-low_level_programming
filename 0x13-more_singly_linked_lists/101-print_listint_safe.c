@@ -11,8 +11,9 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t x = 0;
 	const listint_t *previous;
-	const listint_t *current = head;
+	const listint_t *current;
 
+	current = head;
 	while (current != NULL)
 	{
 		printf("[%p] %d\n", (void *)current, current->n);
