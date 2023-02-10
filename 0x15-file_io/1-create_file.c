@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen - counts the length of a string
+ * _strlen - gets the length of a string
  * @s: string
  *
  * Return: Length of the string
@@ -13,13 +13,13 @@ int _strlen(char *s)
 	if (s[i] == '\0')
 		return (0);
 	i++;
-	return (_strlen(s + 1));
+	return (i + _strlen(s + 1));
 }
 
 /**
  * create_file - creates files
- * @filename: Name of file tp create
- * @text_content: string to write the file
+ * @filename: Name of file to be created
+ * @text_content: content of the file
  *
  * Return: 1 on success or -1 on failure
  */
