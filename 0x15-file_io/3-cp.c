@@ -4,7 +4,7 @@
 
 /**
  * close_fl - closes file descriptor
- * @fd: file descriptor to be closes
+ * @fd: file descriptor to be closed
  */
 
 void close_fl(int fd)
@@ -64,7 +64,9 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	close(from);
-	close(to);
+
+
+	close_fl(from);
+	close_fl(to);
 	return (0);
 }
